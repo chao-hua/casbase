@@ -6,19 +6,19 @@ function resolve(dir) {
 module.exports = {
     pages: {
         index: {
-            entry: 'src/main.ts',
-            template: 'public/index.html',
+            entry: 'examples/main.ts',
+            template: 'examples/index.html',
+            filename: 'index.html'
         }
     },
-    /* configureWebpack: (config) => {
-        //入口文件
-        config.entry.app = ['./examples/main.js'];
-    }, */
     // webpack 配置
     chainWebpack: config => {
         // 相对路径名
         config.resolve.alias
-            .set('@$', resolve('src'))
+            .set('build', resolve('build'))
+            .set('docs', resolve('docs'))
+            .set('examples', resolve('examples'))
+            .set('lib', resolve('lib'))
             .set('packages', resolve('packages'));
         // eslint 自动修复
         config.module
@@ -29,8 +29,6 @@ module.exports = {
                 options.fix = true;
                 return options;
             });
-        // 打包文件带hash
-        // config.output.filename('[name].[hash].js').end();
     },
     devServer: {
         port: '8081'

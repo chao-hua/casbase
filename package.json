@@ -1,15 +1,29 @@
 {
   "name": "cusbase",
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "description": "a vue typescript lib maker",
+  "keywords": [
+    "vue",
+    "typescript"
+  ],
+  "homepage": "https://github.com/chao-hua/cusbase",
   "private": true,
+  "license": "MIT",
+  "author": "chaohua@outlook.com",
+  "main": "lib/cusbase.common.js",
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chao-hua/cusbase.git"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
     "v": "node build/update-version.js",
-    "build-bundle": "vue-cli-service build --target lib --name cusbase ./packages/index.ts",
-    "publish": "npm run build-bundle && npm publish",
-    "lint-css": "stylelint 'packages/**/*.vue' --fix"
+    "lint-css": "stylelint 'packages/**/*.vue' --fix",
+    "build": "vue-cli-service build --target lib --name cusbase --dest lib ./packages/index.ts",
+    "publish": "npm run build && npm publish"
   },
   "dependencies": {
     "core-js": "^3.6.4",

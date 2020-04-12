@@ -16,6 +16,7 @@ tsconfig.json
 .browserslistrc
 jest.config.js
 vue.config.js
+babel.config.js
 
 # local env files
 .env.local
