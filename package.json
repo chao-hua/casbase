@@ -12,7 +12,8 @@
   "author": "chaohua@outlook.com",
   "main": "lib/cusbase.common.js",
   "files": [
-    "lib"
+    "lib",
+    "packages"
   ],
   "repository": {
     "type": "git",
