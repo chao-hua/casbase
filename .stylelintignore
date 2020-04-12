@@ -3,4 +3,4 @@
 *.eot
 *.ttf
 *.woff
-/lib/
+/lib/*.css
