@@ -23,11 +23,11 @@
     "v": "node build/update-version.js",
     "lint-css": "stylelint 'packages/**/*.vue' --fix",
     "build": "vue-cli-service build --target lib --name cusbase --dest lib ./packages/index.ts",
-    "publish": "npm run build && npm publish"
+    "deploy": "npm run build && npm publish"
   },
   "dependencies": {
     "core-js": "^3.6.4",
-    "vue": "^2.6.11",
+    "vue": "^2.6.10",
     "vue-class-component": "^7.2.3",
     "vue-property-decorator": "^8.4.1",
     "vue-router": "^3.1.6"
@@ -55,7 +55,7 @@
     "stylelint-order": "^4.0.0",
     "stylelint-webpack-plugin": "^1.2.3",
     "typescript": "~3.8.3",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.10"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
