@@ -7,7 +7,7 @@
     "typescript"
   ],
   "homepage": "https://github.com/chao-hua/cusbase",
-  "private": true,
+  "private": false,
   "license": "MIT",
   "author": "chaohua@outlook.com",
   "main": "lib/cusbase.common.js",
