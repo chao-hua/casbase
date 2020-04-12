@@ -10,7 +10,6 @@ const install = (Vue: any) => {
 };
 
 const Cusbase = {
-    varsion: '0.0.1',
     install,
     ...components
 };
