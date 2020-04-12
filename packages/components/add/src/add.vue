@@ -10,7 +10,7 @@ import { Component, Vue, Watch, Model } from 'vue-property-decorator';
 
 @Component
 export default class CbAdd extends Vue {
-    @Model('input')
+    @Model('input', { default: 0 })
     value: number;
 
     currentValue: number = this.value;
