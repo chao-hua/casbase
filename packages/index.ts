@@ -1,6 +1,6 @@
-import CbAdd from './components/add';
+import Add from './components/add';
 
-const components = [CbAdd];
+const components = [Add];
 
 const install = (Vue: any) => {
     if ((install as any).installed) return;
@@ -13,5 +13,7 @@ const Cusbase = {
     install,
     ...components
 };
+
+export const CbAdd = Add;
 
 export default Cusbase;
