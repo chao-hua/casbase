@@ -1,6 +1,6 @@
 {
   "name": "cusbase",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "a vue typescript lib maker",
   "keywords": [
     "vue",
