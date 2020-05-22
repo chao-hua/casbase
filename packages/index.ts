@@ -18,4 +18,3 @@ export const CbAdd = Add;
 
 export default Cusbase;
 // master 1
-// master 2
